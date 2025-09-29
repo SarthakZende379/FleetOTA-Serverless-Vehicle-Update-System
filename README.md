@@ -219,8 +219,8 @@ MS Computer Science Student
 Specializing in Cloud Computing & Distributed Systems
 
 📧 Email: szende@binghamton.edu 
-🔗 LinkedIn: [linkedin.com/in/yourprofile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/sarthakzende/))  
-💼 Portfolio: [yourportfolio.com]([https://yourportfolio.com](https://sarthakzende379.github.io/portfolio/))
+🔗 LinkedIn: [linkedin.com/in/yourprofile]([https://www.linkedin.com/in/sarthakzende/])  
+💼 Portfolio: [yourportfolio.com]([https://sarthakzende379.github.io/portfolio/])
 
 ---
 
