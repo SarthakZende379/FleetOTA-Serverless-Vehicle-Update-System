@@ -1,0 +1,4 @@
+# Lambda Update Manager Requirements
+# boto3 is already available in Lambda environment
+
+# No additional packages required

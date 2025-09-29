@@ -1,0 +1,5 @@
+# Lambda Telemetry Processor Requirements
+# boto3 is already available in Lambda environment
+# Only include additional packages if needed
+
+# No additional packages required - using only boto3 which is pre-installed in AWS Lambda

@@ -1,0 +1,70 @@
+{
+  "alarms": [
+    {
+      "AlarmName": "FleetOTA-HighOfflineVehicles",
+      "AlarmDescription": "Alert when more than 30% of fleet is offline",
+      "MetricName": "VehiclesOffline",
+      "Namespace": "FleetOTA",
+      "Statistic": "Average",
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 30,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "FleetOTA-LowFleetBattery",
+      "AlarmDescription": "Alert when average fleet battery drops below 40%",
+      "MetricName": "BatteryPercent",
+      "Namespace": "FleetOTA",
+      "Statistic": "Average",
+      "Period": 300,
+      "EvaluationPeriods": 3,
+      "Threshold": 40,
+      "ComparisonOperator": "LessThanThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "FleetOTA-HighUpdateFailureRate",
+      "AlarmDescription": "Alert when update failure rate exceeds 10%",
+      "MetricName": "UpdateEligibilityRate",
+      "Namespace": "FleetOTA",
+      "Statistic": "Average",
+      "Period": 600,
+      "EvaluationPeriods": 2,
+      "Threshold": 10,
+      "ComparisonOperator": "LessThanThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "FleetOTA-LambdaErrors",
+      "AlarmDescription": "Alert on Lambda function errors",
+      "MetricName": "Errors",
+      "Namespace": "AWS/Lambda",
+      "Dimensions": [
+        {
+          "Name": "FunctionName",
+          "Value": "FleetOTA-TelemetryProcessor"
+        }
+      ],
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 5,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "FleetOTA-NoTelemetryData",
+      "AlarmDescription": "Alert when no telemetry data received for 10 minutes",
+      "MetricName": "VehicleOnline",
+      "Namespace": "FleetOTA",
+      "Statistic": "SampleCount",
+      "Period": 600,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "LessThanThreshold",
+      "TreatMissingData": "breaching"
+    }
+  ]
+}
