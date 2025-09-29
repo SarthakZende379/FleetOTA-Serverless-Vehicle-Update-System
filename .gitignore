@@ -205,3 +205,113 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# FleetOTA .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# AWS
+.aws-sam/
+samconfig.toml
+*.zip
+function.zip
+lambda-package/
+package/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+vehicle_simulator.log
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Credentials (NEVER COMMIT)
+credentials.json
+config.json
+aws-credentials.json
+*.pem
+*.key
+
+# Test Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Sample Data
+sample-telemetry.json
+test-data/
+*.csv
+*.xlsx
+
+# CloudFormation
+*.yaml.bak
+packaged.yaml
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project Specific
+lambda-trust-policy.json
+lambda-policy.json
+lifecycle-policy.json
+downloaded-telemetry/
